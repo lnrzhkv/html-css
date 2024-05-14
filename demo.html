@@ -6,7 +6,6 @@
     <title>Demo</title>
   </head>
   <body>
-
     <!-- <form action="/test">
       <input type="hidden" name="hide" value="zalupa">
       <div>
@@ -36,12 +35,69 @@
       </div>
 
     </form> -->
-    <form action="https://www.youtube.com/results">
+    <form action="#">
       <label>
-        <div>Поиск</div>
-        <input dir type="text" name="search_query">
+        <span>Поиск</span>
+        <input  type="text"  name="search_query">
       </label>
       <button type="submit">Поиск</button>
+
+<!--      checkbox-->
+      <div>
+        <label for="agree">Согласен с обработкой данных</label>
+        <input type="checkbox" name="agree" id="agree">
+      </div>
+
+<!--      radio -->
+      <div style="border: 2px solid black;">
+
+        <div>
+          <label for="all">Поиск везде</label>
+          <input type="radio" name="search_by" id="all" value="all">
+        </div>
+        <div>
+          <label for="youtube">Поиск на Youtube</label>
+          <input type="radio" name="search_by" id="youtube" value="youtube">
+        </div>
+
+      </div>
+
+<!--      select-->
+<div>
+  <label for="items" >Товары</label>
+
+  <select id="items" name="items">
+    <option value="all">Все</option>
+
+    <optgroup label="Популярное">
+      <option value="cat">кот</option>
+      <option value="dog">собак</option>
+      <option value="hedgehog">ёж</option>
+      <option value="pig">свин</option>
+      <option value="horse">еонь</option>
+      <option value="squirrel">белка</option>
+    </optgroup>
+
+  </select>
+</div>
+
+<label for="volume">Громкость</label>
+<input type="range" name="volume" id="volume" min="0" max="100" step="5">
+
+      <label for="number">Число</label>
+      <input type="number" name="number" id="number" min="-5" max="100" >
+
+      <br>
+      <br>
+      <div>
+        <label for="text">Комментарий</label>
+        <textarea style="resize:none; width: 100%" name="text" id="text" ></textarea>
+      </div>
+
+
+
+
+
     </form>
   </body>
 </html>
